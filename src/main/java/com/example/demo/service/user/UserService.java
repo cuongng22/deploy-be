@@ -69,7 +69,7 @@ public class UserService implements UserDetailsService {
         List<Role> roles = new ArrayList<>();
         roles.add(new Role(2L, "ROLE_USER"));
         createItem.setRoles(roles);
-        createItem.setAvatar("avatar1-default.jpg");
+        createItem.setAvatar("avatar-default.jpg");
         createItem.setBackground("background-default.jpg");
         userRepository.save(createItem);
         return createItem;
